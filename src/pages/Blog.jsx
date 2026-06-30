@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [selectedArticle, setSelectedArticle] = useState(null)
 
   const categories = ['all', 'Workout Tips', 'Nutrition Advice', 'Boxing Techniques', 'Client Stories', 'Motivation']
 
@@ -23,7 +24,88 @@ const Blog = () => {
       category: 'Nutrition Advice',
       date: 'June 10, 2026',
       readTime: '7 min read',
-      featured: false
+      featured: false,
+      content: `
+        <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Nutrition Basics: Fueling Your Workouts</h2>
+        <p class="text-crisp-white/80 mb-6 font-spartan text-lg">Here are the fundamentals of sports nutrition and how to properly fuel your body for optimal performance:</p>
+        
+        <div class="space-y-6">
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">1. Eat Enough Calories</h3>
+            <p class="text-crisp-white/80 font-spartan">Your body needs enough energy to support training, recovery, and daily activities. Eating too little can lead to fatigue, poor performance, muscle loss, and slower recovery.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">2. Prioritize Carbohydrates</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Carbohydrates are your body's primary fuel source during moderate- to high-intensity exercise.</p>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Eat complex carbs such as oats, rice, potatoes, whole grains, fruits, and vegetables.</li>
+              <li>Increase carbohydrate intake on days with harder or longer training sessions.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">3. Consume Enough Protein</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Protein supports muscle repair, growth, and recovery.</p>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Aim for around 1.2–2.0 g of protein per kilogram of body weight per day, depending on training intensity and goals.</li>
+              <li>Good sources include lean meat, fish, eggs, dairy, beans, lentils, and soy products.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">4. Include Healthy Fats</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Healthy fats support hormone production, overall health, and provide energy during lower-intensity activities.</p>
+            <p class="text-crisp-white/80 font-spartan">Choose foods like avocados, nuts, seeds, olive oil, and fatty fish.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">5. Stay Hydrated</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Even mild dehydration can reduce performance.</li>
+              <li>Drink fluids throughout the day.</li>
+              <li>During long or intense workouts, replace both fluids and electrolytes, especially if you're sweating heavily.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">6. Time Your Nutrition</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li><strong>Before training (1–3 hours):</strong> Eat a meal rich in carbohydrates with moderate protein and low fat.</li>
+              <li><strong>After training (within about 2 hours):</strong> Consume carbohydrates to replenish energy stores and protein to support muscle recovery.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">7. Eat Micronutrient-Rich Foods</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Vitamins and minerals are essential for energy production, immunity, bone health, and recovery.</p>
+            <p class="text-crisp-white/80 font-spartan">Eat a variety of colorful fruits, vegetables, whole grains, and lean proteins.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">8. Recover Well</h3>
+            <p class="text-crisp-white/80 font-spartan">Nutrition works best alongside quality sleep and adequate rest. Recovery is when your body adapts and becomes stronger.</p>
+          </div>
+
+          <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-4">Sample Pre- and Post-Workout Meals</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <h4 class="font-semibold text-crisp-white mb-2 font-spartan">Pre-workout:</h4>
+                <p class="text-crisp-white/80 font-spartan">Oatmeal with banana and peanut butter, or rice with chicken.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-crisp-white mb-2 font-spartan">Post-workout:</h4>
+                <p class="text-crisp-white/80 font-spartan">Grilled chicken with rice and vegetables, Greek yogurt with fruit, or a protein smoothie with a banana.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-vibrant-green/5 border-l-4 border-vibrant-green p-6 rounded-r-lg">
+            <p class="text-crisp-white/90 font-spartan text-lg italic">The key principle of sports nutrition is simple: fuel your body with enough quality carbohydrates, protein, healthy fats, fluids, and micronutrients at the right times so you can train hard, recover effectively, and perform at your best.</p>
+          </div>
+        </div>
+      `
     },
     {
       id: 3,
@@ -116,7 +198,10 @@ const Blog = () => {
                 <span>•</span>
                 <span className="text-vibrant-green font-spartan">{featuredArticle.category}</span>
               </div>
-              <button className="bg-vibrant-green text-deep-charcoal px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors duration-300 font-spartan">
+              <button 
+                onClick={() => setSelectedArticle(featuredArticle)}
+                className="bg-vibrant-green text-deep-charcoal px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors duration-300 font-spartan"
+              >
                 Read Full Article
               </button>
             </motion.div>
@@ -173,7 +258,10 @@ const Blog = () => {
                   <p className="text-crisp-white/70 mb-4 font-spartan">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-crisp-white/60 text-sm font-spartan">{article.readTime}</span>
-                    <button className="text-vibrant-green hover:text-white transition-colors group-hover:translate-x-2 transform inline-block transition-transform font-spartan">
+                    <button 
+                      onClick={() => setSelectedArticle(article)}
+                      className="text-vibrant-green hover:text-white transition-colors group-hover:translate-x-2 transform inline-block transition-transform font-spartan"
+                    >
                       Read More →
                     </button>
                   </div>
@@ -220,6 +308,49 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
+      {/* Article Modal */}
+      {selectedArticle && (
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90"
+          onClick={() => setSelectedArticle(null)}
+        >
+          <motion.div 
+            initial={{ scale: 0.9, y: 20 }}
+            animate={{ scale: 1, y: 0 }}
+            exit={{ scale: 0.9, y: 20 }}
+            className="bg-deep-charcoal border border-white/10 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 bg-deep-charcoal/95 backdrop-blur border-b border-white/10 p-6 flex items-center justify-between z-10">
+              <div>
+                <span className="text-vibrant-green font-semibold text-sm font-spartan">{selectedArticle.category}</span>
+                <h2 className="text-2xl font-bold font-playfair text-crisp-white">{selectedArticle.title}</h2>
+              </div>
+              <button 
+                onClick={() => setSelectedArticle(null)}
+                className="text-crisp-white/60 hover:text-crisp-white transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="p-8">
+              {selectedArticle.content ? (
+                <div dangerouslySetInnerHTML={{ __html: selectedArticle.content }} className="prose prose-invert max-w-none" />
+              ) : (
+                <div className="text-center py-12">
+                  <p className="text-crisp-white/60 font-spartan">Full article content coming soon...</p>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
     </div>
   )
 }
