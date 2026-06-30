@@ -15,7 +15,86 @@ const Blog = () => {
       category: 'Workout Tips',
       date: 'June 15, 2026',
       readTime: '5 min read',
-      featured: true
+      featured: true,
+      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800',
+      content: `
+        <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">5 Essential Exercises for Building Strength</h2>
+        <p class="text-crisp-white/80 mb-6 font-spartan text-lg">If your goal is to build overall strength, these 5 foundational movement patterns should be the core of your training:</p>
+        
+        <div class="space-y-6">
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Squat – Builds lower-body strength</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">The squat is the king of lower-body exercises, targeting your quads, glutes, hamstrings, and core.</p>
+            <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+              <h4 class="font-semibold text-vibrant-green mb-2 font-spartan">Examples:</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Back squat</li>
+                <li>Front squat</li>
+                <li>Goblet squat</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Deadlift (Hip Hinge) – Develops the posterior chain</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">The deadlift targets your glutes, hamstrings, lower back, and traps, building total-body strength.</p>
+            <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+              <h4 class="font-semibold text-vibrant-green mb-2 font-spartan">Examples:</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Conventional deadlift</li>
+                <li>Romanian deadlift</li>
+                <li>Trap-bar deadlift</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Push – Strengthens the chest, shoulders, and triceps</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Push movements build upper-body pushing strength and muscular development.</p>
+            <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+              <h4 class="font-semibold text-vibrant-green mb-2 font-spartan">Examples:</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Bench press</li>
+                <li>Overhead press</li>
+                <li>Push-ups</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Pull – Builds the back, biceps, and grip</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Pull movements develop a strong back, biceps, and grip strength essential for overall fitness.</p>
+            <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+              <h4 class="font-semibold text-vibrant-green mb-2 font-spartan">Examples:</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Pull-ups</li>
+                <li>Chin-ups</li>
+                <li>Barbell rows</li>
+                <li>Lat pulldowns</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Carry/Core Stability – Improves core strength, grip, and total-body stability</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Carry exercises build functional strength, core stability, and grip endurance.</p>
+            <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+              <h4 class="font-semibold text-vibrant-green mb-2 font-spartan">Examples:</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Farmer's carry</li>
+                <li>Suitcase carry</li>
+                <li>Front rack carry</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-vibrant-green/5 border-l-4 border-vibrant-green p-6 rounded-r-lg">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">Why these five?</h3>
+            <p class="text-crisp-white/90 font-spartan text-lg mb-3">Together, they train nearly every major muscle group and teach your body to produce force efficiently. They also improve coordination, balance, and athleticism.</p>
+            <p class="text-crisp-white/80 font-spartan">By mastering these five foundational movement patterns, you'll build a solid strength foundation that transfers to real-life activities and athletic performance.</p>
+          </div>
+        </div>
+      `
     },
     {
       id: 2,
@@ -25,6 +104,7 @@ const Blog = () => {
       date: 'June 10, 2026',
       readTime: '7 min read',
       featured: false,
+      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
       content: `
         <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Nutrition Basics: Fueling Your Workouts</h2>
         <p class="text-crisp-white/80 mb-6 font-spartan text-lg">Here are the fundamentals of sports nutrition and how to properly fuel your body for optimal performance:</p>
@@ -114,7 +194,8 @@ const Blog = () => {
       category: 'Boxing Techniques',
       date: 'June 5, 2026',
       readTime: '6 min read',
-      featured: false
+      featured: false,
+      image: 'https://images.pexels.com/photos/1543415/pexels-photo-1543415.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: 4,
@@ -123,7 +204,8 @@ const Blog = () => {
       category: 'Client Stories',
       date: 'May 28, 2026',
       readTime: '4 min read',
-      featured: false
+      featured: false,
+      image: 'https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: 5,
@@ -132,7 +214,8 @@ const Blog = () => {
       category: 'Motivation',
       date: 'May 20, 2026',
       readTime: '5 min read',
-      featured: false
+      featured: false,
+      image: 'https://images.pexels.com/photos/3822908/pexels-photo-3822908.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: 6,
@@ -141,7 +224,8 @@ const Blog = () => {
       category: 'Workout Tips',
       date: 'May 15, 2026',
       readTime: '6 min read',
-      featured: false
+      featured: false,
+      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ]
 
@@ -243,8 +327,13 @@ const Blog = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:border-vibrant-green transition-all duration-300 group"
               >
-                <div className="h-48 bg-vibrant-green/10 flex items-center justify-center">
-                  <span className="text-6xl">📝</span>
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={article.image || 'https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=800'}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center space-x-2 text-sm text-crisp-white/60 mb-3">
