@@ -320,7 +320,68 @@ const Blog = () => {
       date: 'May 20, 2026',
       readTime: '5 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/3822908/pexels-photo-3822908.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/3822908/pexels-photo-3822908.jpeg?auto=compress&cs=tinysrgb&w=800',
+      content: `
+        <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Staying Motivated: Tips for Consistency</h2>
+        <p class="text-crisp-white/80 mb-6 font-spartan text-lg">Motivation comes and goes, but consistency is what produces lasting results. Here are practical tips to help you stay on track:</p>
+        
+        <div class="space-y-6">
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">1. Set Clear Goals</h3>
+            <p class="text-crisp-white/80 font-spartan">Have specific, realistic, and measurable goals. Break big goals into smaller milestones to stay motivated.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">2. Build a Routine</h3>
+            <p class="text-crisp-white/80 font-spartan">Train at the same time on your scheduled days. Making exercise part of your routine reduces the need to rely on motivation.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">3. Focus on Progress, Not Perfection</h3>
+            <p class="text-crisp-white/80 font-spartan">Celebrate small improvements, whether it's lifting more weight, improving your technique, or completing an extra round.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">4. Remember Your "Why"</h3>
+            <p class="text-crisp-white/80 font-spartan">Keep your reason for training in mind—whether it's improving health, building strength, learning boxing, or boosting confidence.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">5. Track Your Progress</h3>
+            <p class="text-crisp-white/80 font-spartan">Record your workouts, body measurements, or performance. Seeing your progress over time reinforces consistency.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">6. Enjoy the Process</h3>
+            <p class="text-crisp-white/80 font-spartan">Choose training methods you enjoy. You're much more likely to stick with a program that you find challenging and rewarding.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">7. Be Disciplined</h3>
+            <p class="text-crisp-white/80 font-spartan">Motivation isn't always there. On low-energy days, rely on discipline and your routine to keep moving forward.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">8. Recover Properly</h3>
+            <p class="text-crisp-white/80 font-spartan">Get enough sleep, eat nutritious foods, and take rest days. A well-recovered body performs better and is easier to keep motivated.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">9. Surround Yourself with Positive Support</h3>
+            <p class="text-crisp-white/80 font-spartan">Train with a coach, partner, or supportive community that encourages you and keeps you accountable.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">10. Stay Patient</h3>
+            <p class="text-crisp-white/80 font-spartan">Results take time. Consistent effort over weeks and months leads to lasting improvements in strength, fitness, and skill.</p>
+          </div>
+
+          <div class="bg-vibrant-green/5 border-l-4 border-vibrant-green p-6 rounded-r-lg">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">Key Takeaway</h3>
+            <p class="text-crisp-white/90 font-spartan text-lg">Success doesn't come from being motivated every day—it comes from showing up consistently. Stay committed to your goals, trust the process, and remember that every workout brings you one step closer to becoming stronger, healthier, and more confident.</p>
+          </div>
+        </div>
+      `
     },
     {
       id: 6,
