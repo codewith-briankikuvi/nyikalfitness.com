@@ -391,7 +391,38 @@ const Blog = () => {
       date: 'May 15, 2026',
       readTime: '6 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800',
+      content: `
+        <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">High-Intensity Interval Training Explained</h2>
+        <p class="text-crisp-white/80 mb-6 font-spartan text-lg">High-Intensity Interval Training (HIIT) is a training method that alternates short bursts of intense exercise with brief periods of rest or low-intensity recovery.</p>
+        
+        <div class="space-y-6">
+          <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-6">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-4">Example HIIT Structure</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>30 seconds of all-out effort (e.g., sprints, burpees, or heavy bag punches)</li>
+              <li>30–60 seconds of walking or light movement</li>
+              <li>Repeat for 10–20 minutes</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">Benefits of HIIT</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Improves cardiovascular fitness</li>
+              <li>Burns a high number of calories in a short time</li>
+              <li>Increases endurance and power</li>
+              <li>Can continue burning calories after the workout (the "afterburn" effect)</li>
+              <li>Time-efficient for busy schedules</li>
+            </ul>
+          </div>
+
+          <div class="bg-vibrant-green/5 border-l-4 border-vibrant-green p-6 rounded-r-lg">
+            <h3 class="text-xl font-bold font-playfair text-vibrant-green mb-3">HIIT in Boxing</h3>
+            <p class="text-crisp-white/90 font-spartan text-lg">HIIT is popular in boxing because it closely mimics the demands of a fight, with repeated periods of high-intensity work followed by short recovery intervals. This makes it an excellent training method for fighters looking to improve their conditioning and performance in the ring.</p>
+          </div>
+        </div>
+      `
     }
   ]
 
