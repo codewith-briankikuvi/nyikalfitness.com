@@ -195,7 +195,112 @@ const Blog = () => {
       date: 'June 5, 2026',
       readTime: '6 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/1543415/pexels-photo-1543415.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/1543415/pexels-photo-1543415.jpeg?auto=compress&cs=tinysrgb&w=800',
+      content: `
+        <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Boxing Fundamentals: Stance and Movement</h2>
+        <p class="text-crisp-white/80 mb-6 font-spartan text-lg">A strong stance and good footwork are the foundation of boxing. Power, balance, defense, and effective punching all begin with proper positioning and movement.</p>
+        
+        <div class="space-y-6">
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">1. Proper Boxing Stance</h3>
+            
+            <div class="mb-4">
+              <h4 class="font-semibold text-crisp-white mb-2 font-spartan">For an orthodox boxer (right-handed):</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Left foot in front, right foot behind.</li>
+                <li>Feet shoulder-width apart.</li>
+                <li>Knees slightly bent.</li>
+                <li>Weight distributed evenly (about 50/50).</li>
+                <li>Hands up to protect the face.</li>
+                <li>Chin tucked and eyes forward.</li>
+                <li>Elbows close to the body to protect the ribs.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-crisp-white mb-2 font-spartan">For a southpaw boxer (left-handed):</h4>
+              <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-1">
+                <li>Right foot in front, left foot behind.</li>
+                <li>The rest of the stance remains the same.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">2. Balance</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Stay relaxed and balanced.</li>
+              <li>Avoid leaning too far forward or backward.</li>
+              <li>Keep your center of gravity over your feet so you're ready to attack or defend at any moment.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">3. Basic Footwork</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Always move by stepping with the foot in the direction you're traveling, then bring the other foot with it.</p>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+                <h4 class="font-semibold text-vibrant-green mb-1 font-spartan">Forward:</h4>
+                <p class="text-crisp-white/80 font-spartan">Front foot first, then back foot.</p>
+              </div>
+              <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+                <h4 class="font-semibold text-vibrant-green mb-1 font-spartan">Backward:</h4>
+                <p class="text-crisp-white/80 font-spartan">Back foot first, then front foot.</p>
+              </div>
+              <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+                <h4 class="font-semibold text-vibrant-green mb-1 font-spartan">Left:</h4>
+                <p class="text-crisp-white/80 font-spartan">Left foot first, then right foot.</p>
+              </div>
+              <div class="bg-vibrant-green/10 border border-vibrant-green/30 rounded-lg p-4">
+                <h4 class="font-semibold text-vibrant-green mb-1 font-spartan">Right:</h4>
+                <p class="text-crisp-white/80 font-spartan">Right foot first, then left foot.</p>
+              </div>
+            </div>
+            <p class="text-crisp-white/80 font-spartan mt-3">Maintain your stance throughout every movement.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">4. Don't Cross Your Feet</h3>
+            <p class="text-crisp-white/80 font-spartan">Crossing your feet reduces balance, slows your movement, and makes you vulnerable to attacks.</p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">5. Stay Light on Your Feet</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Move with short, controlled steps.</li>
+              <li>Avoid bouncing excessively or taking large steps.</li>
+              <li>Stay ready to punch, defend, or change direction instantly.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">6. Pivoting</h3>
+            <p class="text-crisp-white/80 font-spartan mb-3">Pivot by rotating on the lead foot while turning the rear foot.</p>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Helps create angles.</li>
+              <li>Allows you to avoid attacks.</li>
+              <li>Sets up better punching opportunities.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-4">7. Common Mistakes</h3>
+            <ul class="list-disc list-inside text-crisp-white/80 font-spartan space-y-2">
+              <li>Standing too square.</li>
+              <li>Crossing the feet.</li>
+              <li>Dropping the hands.</li>
+              <li>Standing flat-footed.</li>
+              <li>Taking steps that are too large.</li>
+              <li>Looking down instead of keeping your eyes on your opponent.</li>
+            </ul>
+          </div>
+
+          <div class="bg-vibrant-green/5 border-l-4 border-vibrant-green p-6 rounded-r-lg">
+            <h3 class="text-2xl font-bold font-playfair text-vibrant-green mb-3">Key Takeaway</h3>
+            <p class="text-crisp-white/90 font-spartan text-lg">Good boxing starts with your feet. A solid stance provides balance and protection, while efficient footwork helps you control distance, create angles, defend effectively, and deliver powerful punches. Master these fundamentals before focusing on advanced combinations or techniques.</p>
+          </div>
+        </div>
+      `
     },
     {
       id: 4,
