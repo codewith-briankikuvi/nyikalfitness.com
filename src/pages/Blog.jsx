@@ -16,7 +16,7 @@ const Blog = () => {
       date: 'June 15, 2026',
       readTime: '5 min read',
       featured: true,
-      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://i.pinimg.com/1200x/4c/67/a8/4c67a89ae2d612a870a5834f35d9d697.jpg',
       content: `
         <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">5 Essential Exercises for Building Strength</h2>
         <p class="text-crisp-white/80 mb-6 font-spartan text-lg">If your goal is to build overall strength, these 5 foundational movement patterns should be the core of your training:</p>
@@ -195,7 +195,7 @@ const Blog = () => {
       date: 'June 5, 2026',
       readTime: '6 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/1543415/pexels-photo-1543415.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://i.pinimg.com/736x/92/fd/e9/92fde90e7a0a2ff73b9e2d49d3a72712.jpg',
       content: `
         <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Boxing Fundamentals: Stance and Movement</h2>
         <p class="text-crisp-white/80 mb-6 font-spartan text-lg">A strong stance and good footwork are the foundation of boxing. Power, balance, defense, and effective punching all begin with proper positioning and movement.</p>
@@ -320,7 +320,7 @@ const Blog = () => {
       date: 'May 20, 2026',
       readTime: '5 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/3822908/pexels-photo-3822908.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://i.pinimg.com/736x/d4/cb/e7/d4cbe7a88d963ffb27431c3cdb8fd0fc.jpg',
       content: `
         <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">Staying Motivated: Tips for Consistency</h2>
         <p class="text-crisp-white/80 mb-6 font-spartan text-lg">Motivation comes and goes, but consistency is what produces lasting results. Here are practical tips to help you stay on track:</p>
@@ -391,7 +391,7 @@ const Blog = () => {
       date: 'May 15, 2026',
       readTime: '6 min read',
       featured: false,
-      image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://i.pinimg.com/1200x/f6/53/52/f6535237eef63bb6b9beeb57e1a28292.jpg',
       content: `
         <h2 class="text-3xl font-bold font-playfair text-crisp-white mb-6">High-Intensity Interval Training Explained</h2>
         <p class="text-crisp-white/80 mb-6 font-spartan text-lg">High-Intensity Interval Training (HIIT) is a training method that alternates short bursts of intense exercise with brief periods of rest or low-intensity recovery.</p>

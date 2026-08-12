@@ -6,6 +6,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Transformations from './pages/Transformations'
 import Booking from './pages/Booking'
+import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
 import Pricing from './pages/Pricing'
 import Blog from './pages/Blog'
@@ -40,6 +41,7 @@ function App() {
             <Route path="/services/apartment-training" element={<ApartmentTraining />} />
             <Route path="/transformations" element={<Transformations />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/blog" element={<Blog />} />

@@ -9,7 +9,7 @@ const Pricing = () => {
       price: 'KES 15,000',
       duration: 'per month',
       features: [
-        '4 personal training sessions',
+        '12 personal training sessions',
         'Customized workout plan',
         'Nutrition guidance',
         'Progress tracking',
@@ -20,10 +20,10 @@ const Pricing = () => {
     {
       id: 2,
       name: 'Premium Package',
-      price: 'KES 25,000',
+      price: 'KES 18,500',
       duration: 'per month',
       features: [
-        '8 personal training sessions',
+        '16 personal training sessions',
         'Customized workout plan',
         'Comprehensive nutrition plan',
         'Progress tracking',
@@ -35,10 +35,10 @@ const Pricing = () => {
     {
       id: 3,
       name: 'Elite Package',
-      price: 'KES 40,000',
+      price: 'KES 22,000',
       duration: 'per month',
       features: [
-        '12 personal training sessions',
+        '20 personal training sessions',
         'Customized workout plan',
         'Premium nutrition planning',
         'Progress tracking',
@@ -230,14 +230,14 @@ const Pricing = () => {
               </thead>
               <tbody>
                 {[
-                  { feature: 'Personal Training Sessions', starter: '4', premium: '8', elite: '12' },
+                  { feature: 'Personal Training Sessions', starter: '12', premium: '16', elite: '20' },
                   { feature: 'Customized Workout Plan', starter: '✓', premium: '✓', elite: '✓' },
                   { feature: 'Nutrition Guidance', starter: '✓', premium: '✓', elite: '✓' },
                   { feature: 'Progress Tracking', starter: '✓', premium: '✓', elite: '✓' },
                   { feature: 'Email Support', starter: '✓', premium: '✓', elite: '✓' },
                   { feature: 'Comprehensive Nutrition Plan', starter: '✗', premium: '✓', elite: '✓' },
-                  { feature: '24/7 WhatsApp Support', starter: '✗', premium: '✓', elite: '✓' },
-                  { feature: 'Monthly Assessment', starter: '✗', premium: '✓', elite: '✓' },
+                  { feature: '24/7 WhatsApp Support', starter: '✓', premium: '✓', elite: '✓' },
+                  { feature: 'Monthly Assessment', starter: '✓', premium: '✓', elite: '✓' },
                   { feature: 'Weekly Assessments', starter: '✗', premium: '✗', elite: '✓' },
                   { feature: 'Meal Prep Guidance', starter: '✗', premium: '✗', elite: '✓' }
                 ].map((row, index) => (

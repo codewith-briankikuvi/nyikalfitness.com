@@ -240,7 +240,7 @@ const Home = () => {
               {
                 title: '5 Essential Exercises for Building Strength',
                 excerpt: 'Discover the key exercises that will help you build functional strength and muscle mass effectively.',
-                image: 'https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=800'
+                image: 'https://i.pinimg.com/1200x/4c/67/a8/4c67a89ae2d612a870a5834f35d9d697.jpg'
               },
               {
                 title: 'Nutrition Basics: Fueling Your Workouts',
@@ -250,7 +250,7 @@ const Home = () => {
               {
                 title: 'Boxing Fundamentals: Stance and Movement',
                 excerpt: 'Master the basics of boxing with this comprehensive guide to proper stance and footwork.',
-                image: 'https://images.pexels.com/photos/1543415/pexels-photo-1543415.jpeg?auto=compress&cs=tinysrgb&w=800'
+                image: 'https://i.pinimg.com/736x/92/fd/e9/92fde90e7a0a2ff73b9e2d49d3a72712.jpg'
               }
             ].map((article, index) => (
               <motion.div
