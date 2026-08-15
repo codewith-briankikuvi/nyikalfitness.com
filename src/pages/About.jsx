@@ -6,7 +6,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="public\gallery\coach\bio.jpg" alt="About background" className="w-full h-full object-cover" />
+          <img src="/gallery/coach/bio.jpg" alt="About background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4 text-center">
@@ -38,7 +38,7 @@ const About = () => {
               viewport={{ once: true }}
               className="relative rounded-lg overflow-hidden mb-8"
             >
-              <img src="public\gallery\coach\20260709_091751.jpg.jpeg" alt="Coach Fitnyikal" className="w-full h-auto object-cover" />
+              <img src="/gallery/coach/20260709_091751.jpg.jpeg" alt="Coach Fitnyikal" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <h3 className="text-3xl font-bold font-playfair text-crisp-white mb-2">Charles Nyikal</h3>
