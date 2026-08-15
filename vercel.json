@@ -5,5 +5,8 @@
   "installCommand": "npm install",
   "git": {
     "lfs": true
-  }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
