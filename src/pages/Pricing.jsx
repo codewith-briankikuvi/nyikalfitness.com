@@ -6,7 +6,7 @@ const Pricing = () => {
     {
       id: 1,
       name: 'Starter Package',
-      price: 'KES 15,000',
+      price: 'KES 21,000',
       duration: 'per month',
       features: [
         '12 personal training sessions',
@@ -20,7 +20,7 @@ const Pricing = () => {
     {
       id: 2,
       name: 'Premium Package',
-      price: 'KES 18,500',
+      price: 'KES 26,000',
       duration: 'per month',
       features: [
         '16 personal training sessions',
@@ -35,7 +35,7 @@ const Pricing = () => {
     {
       id: 3,
       name: 'Elite Package',
-      price: 'KES 22,000',
+      price: 'KES 30,000',
       duration: 'per month',
       features: [
         '20 personal training sessions',
