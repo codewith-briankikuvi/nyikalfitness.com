@@ -302,16 +302,16 @@ const Blog = () => {
         </div>
       `
     },
-    {
-      id: 4,
-      title: 'Client Success: John\'s 3-Month Transformation',
-      excerpt: 'Read about John\'s incredible journey and how he achieved his fitness goals in just 3 months.',
-      category: 'Client Stories',
-      date: 'May 28, 2026',
-      readTime: '4 min read',
-      featured: false,
-      image: 'https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
+    // {
+    //   id: 4,
+    //   title: 'Client Success: John\'s 3-Month Transformation',
+    //   excerpt: 'Read about John\'s incredible journey and how he achieved his fitness goals in just 3 months.',
+    //   category: 'Client Stories',
+    //   date: 'May 28, 2026',
+    //   readTime: '4 min read',
+    //   featured: false,
+    //   image: 'https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=800'
+    // },
     {
       id: 5,
       title: 'Staying Motivated: Tips for Consistency',
@@ -437,7 +437,7 @@ const Blog = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Blog background" className="w-full h-full object-cover" />
+          <img src="https://i.pinimg.com/736x/4a/a9/33/4aa933c80f410edb82173f535f9d6c0d.jpg" alt="Blog background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4 text-center">

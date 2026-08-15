@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "category": "Training",
+    "type": "image",
+    "title": "Strength Training Session",
+    "url": "/gallery/training/20260528_125640.jpg.jpeg" 
+  },
+  {
+    "id": 2,
+    "category": "Transformations",
+    "type": "image",
+    "title": "Client Transformation",
+    "url": "/gallery/transformations/WhatsApp Image 2026-08-15 at 11.12.34.jpeg"
+  },
+  {
+    "id": 3,
+    "category": "Boxing",
+    "type": "video",
+    "title": "Boxing Training",
+    "url": "/gallery/boxing/WhatsApp Video 2026-08-15 at 11.47.03.mp4"
+  },
+  {
+    "id": 4,
+    "category": "Events",
+    "type": "image",
+    "title": "Fitness Event",
+    "url": "/gallery/events/20260620_142639.jpg.jpeg"
+  },
+  {
+    "id": 5,
+    "category": "Training",
+    "type": "image",
+    "title": "Personal Training",
+    "url": "/gallery/training/20260606_113606.jpg.jpeg"
+  },
+  {
+    "id": 6,
+    "category": "Transformations",
+    "type": "image",
+    "title": "Before & After",
+    "url": "/gallery/transformations/20251222_054646.jpg.jpeg"
+  },
+  {
+    "id": 7,
+    "category": "Boxing",
+    "type": "video",
+    "title": "Combat Fitness",
+    "url": "/gallery/boxing/WhatsApp Video 2026-08-15 at 11.47.06.mp4"
+  },
+  {
+    "id": 8,
+    "category": "Training",
+    "type": "video",
+    "title": "Group Session",
+    "url": "/gallery/training/VID-20260724-WA0002.mp4"
+  },
+  {
+    "id": 9,
+    "category": "Training",
+    "type": "video",
+    "title": "Personal Training",
+    "url": "/gallery/training/VID-20260629-WA0011.mp4"
+  },
+  {
+    "id": 10,
+    "category": "Training",
+    "type": "video",
+    "title": "Strength Training Session",
+    "url": "/gallery/training/VID-20260807-WA0006.mp4"
+  },
+  {
+    "id": 11,
+    "category": "Events",
+    "type": "video",
+    "title": "Fitness Event",
+    "url": "/gallery/events/7943d76e0050f6f636b8b394b403841b.mp4"
+  },
+  {
+    "id": 12,
+    "category": "Transformations",
+    "type": "image",
+    "title": "Client Transformation",
+    "url": "/gallery/transformations/WhatsApp Image 2026-08-15 at 11.17.20.jpeg"
+  },
+  {
+    "id": 13,
+    "category": "Training",
+    "type": "video",
+    "title": "Strength Training Session",
+    "url": "/gallery/training/20260606_122300.mp4"
+  },
+  {
+    "id": 14,
+    "category": "Training",
+    "type": "video",
+    "title": "Personal Training",
+    "url": "/gallery/training/20260606_122453.mp4"
+  }
+]

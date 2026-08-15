@@ -56,7 +56,7 @@ const Pricing = () => {
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="https://i.pinimg.com/736x/27/67/fe/2767fe1683bd094202b986df4dfff666.jpg"
             alt="Pricing background"
             className="w-full h-full object-cover"
           />
@@ -148,7 +148,7 @@ const Pricing = () => {
             >
               <div className="relative h-64 md:h-80">
                 <img
-                  src="https://images.pexels.com/photos/4167552/pexels-photo-4167552.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="https://i.pinimg.com/1200x/ff/71/54/ff7154aaa7fc5f307d701cc27e08b7c5.jpg"
                   alt="Personal training"
                   className="w-full h-full object-cover"
                 />

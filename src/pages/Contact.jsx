@@ -154,17 +154,17 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-crisp-white focus:outline-none focus:border-vibrant-green transition-colors font-spartan"
+                    className="w-full px-4 py-3 bg-deep-charcoal border border-white/10 rounded-lg text-crisp-white focus:outline-none focus:border-vibrant-green transition-colors font-spartan"
                   >
-                    <option value="">Select a service</option>
-                    <option value="Personal Training">Personal Training</option>
-                    <option value="Group Training">Group Training</option>
-                    <option value="Boxing">Boxing</option>
-                    <option value="Apartment Training">Apartment Training</option>
-                    <option value="Muscle Building">Muscle Building</option>
-                    <option value="Nutrition Guidance">Nutrition Guidance</option>
-                    <option value="Online Coaching">Online Coaching</option>
-                    <option value="Other">Other</option>
+                    <option value="" className="bg-deep-charcoal text-crisp-white/50">Select a service</option>
+                    <option value="Personal Training" className="bg-deep-charcoal text-crisp-white">Personal Training</option>
+                    <option value="Group Training" className="bg-deep-charcoal text-crisp-white">Group Training</option>
+                    <option value="Boxing" className="bg-deep-charcoal text-crisp-white">Boxing</option>
+                    <option value="Apartment Training" className="bg-deep-charcoal text-crisp-white">Apartment Training</option>
+                    <option value="Muscle Building" className="bg-deep-charcoal text-crisp-white">Muscle Building</option>
+                    <option value="Nutrition Guidance" className="bg-deep-charcoal text-crisp-white">Nutrition Guidance</option>
+                    <option value="Online Coaching" className="bg-deep-charcoal text-crisp-white">Online Coaching</option>
+                    <option value="Other" className="bg-deep-charcoal text-crisp-white">Other</option>
                   </select>
                 </div>
 

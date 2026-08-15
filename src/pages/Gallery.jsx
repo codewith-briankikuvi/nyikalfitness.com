@@ -1,34 +1,52 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import galleryData from '../data/gallery.json'
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedMedia, setSelectedMedia] = useState(null)
+  const videoRefs = useRef([])
 
-  const categories = ['all', 'Training', 'Transformations', 'Boxing', 'Nutrition', 'Events']
+  const categories = ['all', 'Training', 'Transformations', 'Boxing', 'Events']
 
-  const mediaItems = [
-    { id: 1, category: 'Training', type: 'image', title: 'Strength Training Session' },
-    { id: 2, category: 'Transformations', type: 'image', title: 'Client Transformation' },
-    { id: 3, category: 'Boxing', type: 'image', title: 'Boxing Training' },
-    { id: 4, category: 'Nutrition', type: 'image', title: 'Nutrition Planning' },
-    { id: 5, category: 'Events', type: 'image', title: 'Fitness Event' },
-    { id: 6, category: 'Training', type: 'image', title: 'Personal Training' },
-    { id: 7, category: 'Transformations', type: 'image', title: 'Before & After' },
-    { id: 8, category: 'Boxing', type: 'image', title: 'Combat Fitness' },
-    { id: 9, category: 'Training', type: 'image', title: 'Group Session' },
-  ]
+  const mediaItems = galleryData
 
   const filteredMedia = selectedCategory === 'all' 
     ? mediaItems 
     : mediaItems.filter(item => item.category === selectedCategory)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target
+          if (entry.isIntersecting) {
+            video.play().catch(() => {})
+          } else {
+            video.pause()
+          }
+        })
+      },
+      { threshold: 0.5 }
+    )
+
+    videoRefs.current.forEach((video) => {
+      if (video) observer.observe(video)
+    })
+
+    return () => {
+      videoRefs.current.forEach((video) => {
+        if (video) observer.unobserve(video)
+      })
+    }
+  }, [filteredMedia])
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Gallery background" className="w-full h-full object-cover" />
+          <img src="https://i.pinimg.com/736x/55/3a/fb/553afb2acf280fd16c6cffe8316e3218.jpg" alt="Gallery background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4 text-center">
@@ -85,8 +103,23 @@ const Gallery = () => {
                 onClick={() => setSelectedMedia(item)}
                 className="relative group cursor-pointer overflow-hidden rounded-lg bg-white/5 border border-white/10 hover:border-vibrant-green transition-all duration-300"
               >
-                <div className="aspect-square bg-vibrant-green/10 flex items-center justify-center">
-                  <span className="text-6xl">{item.type === 'image' ? '📷' : '🎥'}</span>
+                <div className="aspect-square bg-vibrant-green/10 overflow-hidden">
+                  {item.type === 'image' ? (
+                    <img 
+                      src={item.url} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  ) : (
+                    <video 
+                      ref={(el) => (videoRefs.current[index] = el)}
+                      src={item.url}
+                      className="w-full h-full object-cover"
+                      muted
+                      loop
+                      playsInline
+                    />
+                  )}
                 </div>
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-center p-4">
@@ -128,11 +161,24 @@ const Gallery = () => {
                 ✕
               </button>
             </div>
-            <div className="aspect-video bg-vibrant-green/10 rounded-lg flex items-center justify-center">
-              <span className="text-8xl">{selectedMedia.type === 'image' ? '📷' : '🎥'}</span>
+            <div className="aspect-video bg-vibrant-green/10 rounded-lg flex items-center justify-center overflow-hidden">
+              {selectedMedia.type === 'image' ? (
+                <img 
+                  src={selectedMedia.url} 
+                  alt={selectedMedia.title}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <video 
+                  src={selectedMedia.url}
+                  className="w-full h-full object-contain"
+                  controls
+                  autoPlay
+                />
+              )}
             </div>
             <div className="mt-4 flex justify-between items-center">
-              <p className="text-crisp-white/60 font-spartan">Media placeholder - will be replaced with actual media from Cloudinary</p>
+              <p className="text-crisp-white/60 font-spartan">{selectedMedia.category}</p>
               <div className="flex space-x-4">
                 <button className="text-crisp-white hover:text-vibrant-green transition-colors">← Previous</button>
                 <button className="text-crisp-white hover:text-vibrant-green transition-colors">Next →</button>

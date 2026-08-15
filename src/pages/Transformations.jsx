@@ -7,25 +7,25 @@ const Transformations = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'John Doe',
+      name: 'Precious Kimeu',
       duration: '3 months',
       rating: 5,
-      text: 'Coach Fitnyikal transformed my life. I lost 20kg and gained confidence I never knew I had.',
+      text: 'He’s an outstanding trainer who pushes you to your limits not to break you, but because he’s genuinely invested in your progress. Every session you’ll find yourself going harder than you thought possible, and leaving stronger than when you walked in. Incredibly professional, endlessly patient, and results-driven. If you’re serious about leveling up, he’s the one. 100% worth it. Highly recommend!',
       service: 'Personal Training',
       verified: true
     },
     {
       id: 2,
-      name: 'Jane Smith',
+      name: 'Adrien Kironji',
       duration: '6 months',
       rating: 5,
-      text: 'The online coaching program was perfect for my busy schedule. Amazing results!',
+      text: 'I am incredibly thankful for a trainer who not only challenges me to be better but also supports me every step of the way. His dedication, patience, and ability to keep me accountable have been key to my progress. The effort he puts into helping me reach my goals never goes unnoticed, and I could not ask for a better coach or friend.',
       service: 'Online Coaching',
       verified: true
     },
     {
       id: 3,
-      name: 'Mike Johnson',
+      name: 'Anthony Kamau',
       duration: '4 months',
       rating: 5,
       text: 'Boxing training with Coach Fitnyikal is intense and rewarding. Best decision ever.',
@@ -34,7 +34,7 @@ const Transformations = () => {
     },
     {
       id: 4,
-      name: 'Sarah Williams',
+      name: 'Sarah Kadzo',
       duration: '5 months',
       rating: 5,
       text: 'The nutrition guidance helped me understand food better. Sustainable lifestyle change.',
@@ -43,16 +43,16 @@ const Transformations = () => {
     },
     {
       id: 5,
-      name: 'David Brown',
+      name: 'Carol Thuku',
       duration: '8 months',
       rating: 5,
-      text: 'Built 15kg of muscle with the muscle building program. Professional and effective.',
+      text: 'I  highly recommend Nyikalfitness! Thanks to his guidance, motivation and dedication i was able to reach my weight loss goals.He kept me accountable and always encouraged me to push myself while making fitness enjoyable. His knowledge and support made a huge difference in my journey. Thank you for being such an amazing coach!',
       service: 'Muscle Building',
       verified: true
     },
     {
       id: 6,
-      name: 'Emily Davis',
+      name: 'Philip Kosgei',
       duration: '2 months',
       rating: 5,
       text: 'Group training sessions are so much fun! Great community and amazing energy.',
@@ -72,7 +72,7 @@ const Transformations = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Transformations background" className="w-full h-full object-cover" />
+          <img src="https://i.pinimg.com/736x/53/e1/6a/53e16abe6740f1b84ddb5b2a1d4a7ac6.jpg" alt="Transformations background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4 text-center">
@@ -166,11 +166,11 @@ const Transformations = () => {
             <h2 className="text-4xl font-bold font-playfair text-crisp-white mb-6">Featured Transformation</h2>
             <div className="bg-white/5 border border-white/10 rounded-lg p-8 mb-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div className="h-64 bg-vibrant-green/10 rounded-lg flex items-center justify-center">
-                  <span className="text-crisp-white/60 font-spartan">Before Photo</span>
+                <div className="h-64 rounded-lg overflow-hidden">
+                  <img src="/gallery/transformations/before.jpg" alt="Before" className="w-full h-full object-cover" />
                 </div>
-                <div className="h-64 bg-vibrant-green/10 rounded-lg flex items-center justify-center">
-                  <span className="text-crisp-white/60 font-spartan">After Photo</span>
+                <div className="h-64 rounded-lg overflow-hidden">
+                  <img src="/gallery/transformations/after.jpg" alt="After" className="w-full h-full object-cover" />
                 </div>
               </div>
               <h3 className="text-2xl font-bold font-playfair text-vibrant-green mb-4">Success Story</h3>
