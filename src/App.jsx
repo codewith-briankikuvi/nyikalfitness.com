@@ -21,10 +21,12 @@ import AdminLayout from './components/CMS/AdminLayout'
 import AdminDashboard from './components/CMS/AdminDashboard'
 import ArticleList from './components/CMS/ArticleList'
 import ArticleEditor from './components/CMS/ArticleEditor'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-deep-charcoal text-crisp-white font-spartan">
         <Header />
         <main className="flex-grow">
