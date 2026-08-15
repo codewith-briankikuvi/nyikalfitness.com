@@ -10,9 +10,6 @@ coverage
 dist/
 build/
 
-# Public assets (media files should use CDN/storage)
-public/
-
 # Misc
 .DS_Store
 .env
