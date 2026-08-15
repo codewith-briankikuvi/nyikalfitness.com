@@ -7,7 +7,7 @@ const Booking = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Booking background" className="w-full h-full object-cover" />
+          <img src="https://i.pinimg.com/736x/e3/55/b4/e355b4505ea986ae47a4ae1ca6b0d608.jpg" alt="Booking background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4">
