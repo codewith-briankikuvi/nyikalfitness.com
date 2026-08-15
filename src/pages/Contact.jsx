@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,24 +25,25 @@ const Contact = () => {
     setSubmitStatus(null)
 
     try {
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone,
-        service: formData.service,
-        message: formData.message,
-        to_email: 'charlesnyikal52@gmail.com'
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          consent: true
+        })
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' })
+      } else {
+        setSubmitStatus('error')
       }
-
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', phone: '', service: '', message: '' })
     } catch (error) {
       console.error('Error sending email:', error)
       setSubmitStatus('error')
@@ -57,7 +57,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1552334/pexels-photo-1552334.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Contact background" className="w-full h-full object-cover" />
+          <img src="https://i.pinimg.com/236x/8f/7c/c4/8f7cc43a9aef19bcb3a7e7b07c21f170.jpg" alt="Contact background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative container mx-auto px-4">
